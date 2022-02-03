@@ -1,0 +1,9 @@
+[submodule "r-help"]
+	path = r-help
+	url = https://github.com/mikemahoney218/r-help
+[submodule "r-announce"]
+	path = r-announce
+	url = https://github.com/mikemahoney218/r-announce
+[submodule "r-devel"]
+	path = r-devel
+	url = https://github.com/mikemahoney218/r-devel
