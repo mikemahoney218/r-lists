@@ -7,3 +7,9 @@
 [submodule "r-devel"]
 	path = r-devel
 	url = https://github.com/mikemahoney218/r-devel
+[submodule "r-packages"]
+	path = r-packages
+	url = https://github.com/mikemahoney218/r-packages
+[submodule "r-package-devel"]
+	path = r-package-devel
+	url = https://github.com/mikemahoney218/r-package-devel
