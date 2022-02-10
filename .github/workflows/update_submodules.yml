@@ -16,9 +16,6 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email 'github-actions[bot]@users.noreply.github.com'
-          cd r-announce && git checkout main && git pull && cd ..
-          cd r-devel && git checkout main && git pull && cd ..
-          cd r-help && git checkout main && git pull && cd ..
-          cd r-package-devel && git checkout main && git pull && cd ..
-          cd r-packages && git checkout main && git pull && cd ..
-          git commit -am "Update submodules" && git push
+          git pull --recurse-submodules
+          git add .
+          git commit -m "Update submodules" && git push
