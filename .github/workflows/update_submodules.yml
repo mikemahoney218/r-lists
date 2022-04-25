@@ -16,7 +16,6 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email 'github-actions[bot]@users.noreply.github.com'
-          git pull --recurse-submodules
-          git submodule update --remote --recursive
+          git pull origin main --recurse-submodules
           git add .
           git commit -m "Update submodules" && git push
