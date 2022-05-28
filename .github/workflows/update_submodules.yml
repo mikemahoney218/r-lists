@@ -12,10 +12,11 @@ jobs:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - uses: actions/checkout@v2
+        with: 
+          submodules: recursive
       - name: Pull submodules
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email 'github-actions[bot]@users.noreply.github.com'
-          git submodule foreach git pull origin main
           git add .
           git commit -m "Update submodules" && git push
